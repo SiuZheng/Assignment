@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Things to do in Malaysia</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper.js for Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../Style/activities.css">
+</head>
+<body>
+    <!-- Navigation bar -->
+   <div id="nav-container"></div>
+
+    <!-- Banner -->
+    <section class="adventure-banner text-center text-white">
+        <div class="container">
+            <h1>Things to Do in Malaysia</h1>
+            <p>Explore a wide range of activities and experiences across Malaysia.</p>
+        </div>
+    </section>
+
+    
+
+    <main><!-- Adventure Activities Section -->
+        <section class="attractive-slider text-center">
+            <div class="container">
+                <h2>Most Attractive Activities</h2>
+                <div class="underline mx-auto"></div>
+                <div id="activityCarousel" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="hover">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#activityCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#activityCarousel" data-slide-to="1"></li>
+                        <li data-target="#activityCarousel" data-slide-to="2"></li>
+                        <li data-target="#activityCarousel" data-slide-to="3"></li>
+                        <li data-target="#activityCarousel" data-slide-to="4"></li>
+                        <li data-target="#activityCarousel" data-slide-to="5"></li>
+                        <!-- Add more indicators as needed -->
+                    </ol>
+                    
+                    
+                    <!-- Slides -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../Image/petronas_twin_towers.jpg" class="d-block w-100" alt="Petronas Twin Towers" onclick="showActivityModal('Visit the Petronas Twin Towers', '../Image/petronas_twin_towers.jpg', 'The Petronas Twin Towers, an iconic symbol of Malaysia, offer visitors a chance to experience Kuala Lumpur from new heights. The towers feature the world\'s highest twin structure, with a sky bridge offering panoramic views of the city. Visitors can also explore the surrounding KLCC Park and Suria KLCC shopping mall. A visit to the towers is a must-do for anyone visiting Kuala Lumpur, providing both a cultural and architectural experience.')">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Visit the Petronas Twin Towers</h5>
+                                <p>Visit the sky bridge for panoramic views of the city and explore the surrounding KLCC Park and Suria KLCC shopping mall.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../Image/batu_caves.jpg" class="d-block w-100" alt="Batu Caves" onclick="showActivityModal('Explore Batu Caves', '../Image/batu_caves.jpg', 'Batu Caves, a famous Hindu temple set in a limestone hill, is a must-visit destination in Kuala Lumpur. Visitors can climb the 272 steps to reach the cave complex, which features impressive statues and religious shrines. The caves are also home to the annual Thaipusam festival, attracting thousands of pilgrims. Batu Caves offers a unique cultural experience, blending natural beauty with religious significance.')">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Explore Batu Caves</h5>
+                                <p>Climb the 272 steps to reach Batu Caves, a famous Hindu temple set in a limestone hill.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../Image/penang_hill.jpg" class="d-block w-100" alt="Penang Hill" onclick="showActivityModal('Visit Penang Hill', '../Image/penang_hill.jpg', 'Penang Hill offers breathtaking views of the island and the surrounding sea. Visitors can take the funicular railway to the top, where they\'ll find colonial bungalows, nature trails, and the charming David Brown\'s Restaurant. The cool climate and serene environment make it a perfect escape from the heat of the city. Penang Hill is a must-visit for nature lovers and those seeking a peaceful retreat with stunning vistas.')">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Visit Penang Hill</h5>
+                                <p>Explore the hill’s colonial bungalows, nature trails, and the charming David Brown’s Restaurant.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../Image/legoland_malaysia.jpg" class="d-block w-100" alt="Legoland Malaysia" onclick="showActivityModal('Legoland Malaysia Resort', '../Image/legoland_malaysia.jpg', 'Legoland Malaysia Resort in Johor is a family-friendly destination that promises fun and adventure for all ages. The resort features interactive rides, live shows, and attractions themed around the iconic Lego bricks. Highlights include the Lego Kingdoms, Lego Technic, and the Legoland Water Park. It\'s a perfect destination for families to explore, learn, and play together, making memories that will last a lifetime.')">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Legoland Malaysia Resort</h5>
+                                <p>Visit the first Legoland in Asia, featuring interactive rides, shows, and attractions perfect for families.</p>
+                            </div>
+                        </div><div class="carousel-item">
+                            <img src="../Image/jonker_street.jpg" class="d-block w-100" alt="Jonker Street" onclick="showActivityModal('Explore Jonker Street', '../Image/jonker_street.jpg', 'Jonker Street in Melaka\'s Chinatown is a vibrant area known for its bustling night market, historical sites, and diverse food offerings. Visitors can explore the street\'s many antique shops, cafes, and temples, including the Cheng Hoon Teng Temple. The night market, held on weekends, is a highlight, with street food, live performances, and souvenirs. Jonker Street is a cultural and historical hub, offering a unique glimpse into Melaka\'s rich heritage.')">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Explore Jonker Street</h5>
+                                <p>Visit Jonker Street, the vibrant heart of Melaka’s Chinatown. Experience the bustling night market, explore historical sites.</p>
+                            </div>
+                        </div><div class="carousel-item">
+                            <img src="../Image/bungee_jump.jpg" class="d-block w-100" alt="Sunway Lagoon" onclick="showActivityModal('Bungee Jumping', '../Image/bungee_jump.jpg', 'Take the plunge at Sunway Lagoon\'s bungee jumping attraction, one of Malaysia\'s most thrilling adventures. Leaping from a platform high above, you\'ll experience the ultimate rush as you free-fall before being safely pulled back up. The combination of excitement, fear, and triumph makes bungee jumping a must-try for thrill-seekers visiting Kuala Lumpur. It\'s an unforgettable way to push your limits and conquer your fears.')">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Bungee Jumping</h5>
+                                <p>Take the plunge at Sunway Lagoon's bungee jumping attraction.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- Controls -->
+                    <a class="carousel-control-prev" href="#activityCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#activityCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section class="adventure-section">
+            <div class="container">
+                <h2 class="text-center">All Activities</h2>
+                <div class="underline mx-auto"></div>
+    
+                <!-- Filter Dropdown -->
+                <div class="filter-container text-center my-4">
+                    <label for="stateFilter" class="mr-2">Filter by State:</label>
+                    <select id="stateFilter" class="form-control d-inline-block w-auto" onchange="filterActivities()">
+                        <option value="all">All</option>
+                        <option value="johor">Johor</option>
+                        <option value="kedah">Kedah</option>
+                        <option value="kelantan">Kelantan</option>
+                        <option value="melaka">Melaka</option>
+                        <option value="negeri_sembilan">Negeri Sembilan</option>
+                        <option value="pahang">Pahang</option>
+                        <option value="perak">Perak</option>
+                        <option value="perlis">Perlis</option>
+                        <option value="pulau pinang">Pulau Pinang</option>
+                        <option value="sabah">Sabah</option>
+                        <option value="sarawak">Sarawak</option>
+                        <option value="selangor">Selangor</option>
+                        <option value="terengganu">Terengganu</option>
+                        <option value="kuala_lumpur">WP Kuala Lumpur</option>
+                        <option value="labuan">WP Labuan</option>
+                        <option value="putrajaya">WP Putrajaya</option>
+                    </select>
+                </div>
+    
+                <div class="row activity-container" id="activity-container">
+                    <!-- Activity Item -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="sabah" onclick="showActivityModal('Jungle Trekking & Hiking', '../Image/gunung_kinabalu.jpg', 'Jungle trekking and hiking in Malaysia offer unparalleled opportunities to experience the country\'s diverse ecosystems. At Gunung Kinabalu, one of Southeast Asia\'s highest peaks, adventurers are treated to stunning views, diverse flora, and fauna, including rare orchids and the endangered Rafflesia flower. The journey to the summit is challenging yet rewarding, with a sense of achievement and breathtaking scenery awaiting those who conquer the heights. This activity is perfect for nature lovers and thrill-seekers alike.')">
+                        <div class="card shadow-sm">
+                            <img src="../Image/gunung_kinabalu.jpg" class="card-img-top" alt="Gunung Kinabalu">
+                            <div class="card-body">
+                                <small class="text-muted">Sabah</small>
+                                <h5 class="card-title">Jungle Trekking & Hiking</h5>
+                                <p class="card-text">Experience the breathtaking views from the peak of Gunung Kinabalu.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Scuba Diving & Snorkeling -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="sabah" onclick="showActivityModal('Scuba Diving & Snorkeling', '../Image/sipadan.jpg', 'Malaysia\'s Sipadan Island is a world-renowned scuba diving destination, offering some of the most vibrant coral reefs and marine biodiversity in the world. Divers can explore underwater caves, swim alongside turtles, sharks, and thousands of colorful fish species. Snorkelers, too, can enjoy the clear waters and abundant marine life just beneath the surface. The pristine conditions and rich aquatic ecosystem make Sipadan a must-visit for any underwater enthusiast.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/sipadan.jpg" class="card-img-top" alt="Sipadan Island">
+                            <div class="card-body">
+                                <small class="text-muted">Sabah</small>
+                                <h5 class="card-title">Scuba Diving & Snorkeling</h5>
+                                <p class="card-text">Explore the vibrant coral reefs and marine life in Sipadan Island.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- White Water Rafting -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="sabah"  onclick="showActivityModal('White Water Rafting', '../Image/rafting.jpg', 'White water rafting in Malaysia provides an adrenaline-pumping adventure through some of the country\'s most scenic rivers. Sungai Padas in Sabah is a premier destination, with its thrilling rapids set against a backdrop of lush tropical rainforests. Rafters navigate through turbulent waters, testing their skills and teamwork. This activity is not only about the thrill; it also offers a unique way to experience Malaysia\'s natural beauty from a different perspective.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/rafting.jpg" class="card-img-top" alt="Sungai Padas">
+                            <div class="card-body">
+                                <small class="text-muted">Sabah</small>
+                                <h5 class="card-title">White Water Rafting</h5>
+                                <p class="card-text">Feel the rush of the rapids at Sungai Padas in Sabah.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Caving -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="sarawak" onclick="showActivityModal('White Water Rafting', '../Image/rafting.jpg', 'White water rafting in Malaysia provides an adrenaline-pumping adventure through some of the country\'s most scenic rivers. Sungai Padas in Sabah is a premier destination, with its thrilling rapids set against a backdrop of lush tropical rainforests. Rafters navigate through turbulent waters, testing their skills and teamwork. This activity is not only about the thrill; it also offers a unique way to experience Malaysia\'s natural beauty from a different perspective.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/mulu_caves.jpg" class="card-img-top" alt="Mulu Caves">
+                            <div class="card-body">
+                                <small class="text-muted">Sarawak</small>
+                                <h5 class="card-title">Caving</h5>
+                                <p class="card-text">Discover the vast underground world of Mulu Caves in Sarawak.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Rock Climbing -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="selangor" onclick="showActivityModal('Rock Climbing', '../Image/bukit_takun.jpg', 'Rock climbing at Bukit Takun in Selangor offers climbers a unique experience on limestone cliffs surrounded by lush greenery. The routes vary in difficulty, making it suitable for both beginners and experienced climbers. The location provides not just a physical challenge but also breathtaking views of the surrounding area. Climbing here is a perfect blend of adventure and nature, offering a rewarding experience for those looking to test their limits.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/bukit_takun.jpg" class="card-img-top" alt="Bukit Takun">
+                            <div class="card-body">
+                                <small class="text-muted">Selangor</small>
+                                <h5 class="card-title">Rock Climbing</h5>
+                                <p class="card-text">Challenge yourself on the limestone cliffs of Bukit Takun.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Paragliding -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="selangor" onclick="showActivityModal('Paragliding', '../Image/paragliding.jpg', 'Soaring over the stunning landscapes of Bukit Jugra while paragliding is an unforgettable experience. This activity offers a bird\'s-eye view of Malaysia\'s diverse topography, from lush forests to expansive beaches. Paragliding here is suitable for both novices and seasoned flyers, with experienced instructors available to guide you. The thrill of gliding through the air, coupled with the serene views below, makes paragliding at Bukit Jugra a top adventure in Malaysia.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/paragliding.jpg" class="card-img-top" alt="Bukit Jugra">
+                            <div class="card-body">
+                                <small class="text-muted">Selangor</small>
+                                <h5 class="card-title">Paragliding</h5>
+                                <p class="card-text">Soar over stunning landscapes at Bukit Jugra.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Zip-lining -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="sabah" onclick="showActivityModal('Zip-lining', '../Image/zipline.jpg', 'Experience the thrill of the world\'s longest island-to-island zipline at Coral Flyer in Sabah. This adrenaline-pumping activity allows you to soar above crystal-clear waters between the islands of Gaya and Sapi. The zipline offers not only a rush of excitement but also a unique perspective of Malaysia\'s stunning island landscapes. It\'s a perfect adventure for those seeking a combination of speed, height, and breathtaking views.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/zipline.jpg" class="card-img-top" alt="Coral Flyer Zipline">
+                            <div class="card-body">
+                                <small class="text-muted">Sabah</small>
+                                <h5 class="card-title">Zip-lining</h5>
+                                <p class="card-text">Experience the thrill of the world's longest island-to-island zipline in Sabah.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Mountaineering -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="pahang" onclick="showActivityModal('Mountaineering', '../Image/gunung_tahan.jpg', 'Mountaineering on Gunung Tahan, the highest peak in Peninsular Malaysia, is a challenging yet rewarding adventure. The trek is known for its difficult terrain, requiring physical endurance and mental resilience. However, the sense of accomplishment upon reaching the summit, coupled with panoramic views of the surrounding rainforest, makes it all worthwhile. This activity is ideal for seasoned hikers looking to test their limits in one of Malaysia\'s most remote and beautiful locations.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/gunung_tahan.jpg" class="card-img-top" alt="Gunung Tahan">
+                            <div class="card-body">
+                                <small class="text-muted">Pahang</small>
+                                <h5 class="card-title">Mountaineering at Gunung Tahan</h5>
+                                <p class="card-text">Conquer the challenging trails of Gunung Tahan, the highest peak in Peninsular Malaysia.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Waterfall Abseiling -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="selangor" onclick="showActivityModal('Waterfall Abseiling', '../Image/waterfall_abseiling.jpg', 'Waterfall abseiling at Kanching Waterfalls near Kuala Lumpur offers an exhilarating blend of adventure and nature. Descending the cascading waterfalls while being surrounded by lush jungle is a unique experience. The activity combines the thrill of abseiling with the beauty of a tropical waterfall setting. It\'s a must-try for adventure enthusiasts seeking an off-the-beaten-path experience close to the city.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/waterfall_abseiling.jpg" class="card-img-top" alt="Kanching Waterfalls">
+                            <div class="card-body">
+                                <small class="text-muted">Selangor</small>
+                                <h5 class="card-title">Waterfall Abseiling</h5>
+                                <p class="card-text">Descend the cascading Kanching Waterfalls near Kuala Lumpur.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Kayaking & Canoeing -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="perak" onclick="showActivityModal('Kayaking & Canoeing', '../Image/kayaking.jpg', 'Paddling through the serene waters of the Belum Rainforest in Perak is a tranquil and immersive experience. As you navigate the lakes, you\'ll encounter lush greenery, wildlife, and the peaceful sounds of nature. Kayaking and canoeing here offer a chance to explore Malaysia\'s rich biodiversity at a relaxed pace, making it perfect for nature lovers and those seeking a peaceful escape from the hustle and bustle of daily life.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/kayaking.jpg" class="card-img-top" alt="Belum Rainforest">
+                            <div class="card-body">
+                                <small class="text-muted">Perak</small>
+                                <h5 class="card-title">Kayaking & Canoeing at Belum Rainforest</h5>
+                                <p class="card-text">Paddle through the serene lakes of the Belum Rainforest.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Skydiving -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="kedah" onclick="showActivityModal('Skydiving', '../Image/skydiving.jpg', 'Skydiving over Langkawi offers an unparalleled adrenaline rush as you free-fall from thousands of feet above. The experience is intensified by the breathtaking views of Langkawi\'s islands, beaches, and turquoise waters. Whether you\'re a first-timer or an experienced skydiver, the thrill of jumping from a plane and soaring through the sky in this stunning location is an adventure you\'ll never forget.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/skydiving.jpg" class="card-img-top" alt="Langkawi">
+                            <div class="card-body">
+                                <small class="text-muted">Kedah</small>
+                                <h5 class="card-title">Skydiving</h5>
+                                <p class="card-text">Experience the ultimate adrenaline rush with skydiving over Langkawi.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Bungee Jumping -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="selangor" onclick="showActivityModal('Bungee Jumping', '../Image/bungee_jump.jpg', 'Take the plunge at Sunway Lagoon\'s bungee jumping attraction, one of Malaysia\'s most thrilling adventures. Leaping from a platform high above, you\'ll experience the ultimate rush as you free-fall before being safely pulled back up. The combination of excitement, fear, and triumph makes bungee jumping a must-try for thrill-seekers visiting Kuala Lumpur. It\'s an unforgettable way to push your limits and conquer your fears.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/bungee_jump.jpg" class="card-img-top" alt="Sunway Lagoon">
+                            <div class="card-body">
+                                <small class="text-muted">Selangor</small>
+                                <h5 class="card-title">Bungee Jumping</h5>
+                                <p class="card-text">Take the plunge at Sunway Lagoon's bungee jumping attraction.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Shopping at Carpenter Street and Main Bazaar -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="sarawak" onclick="showActivityModal('Shopping at Carpenter Street and Main Bazaar', '../Image/carpenter_street.jpg', 'Exploring Carpenter Street and Main Bazaar in Kuching is a cultural journey through Sarawak\'s rich heritage. These bustling streets are lined with shops selling traditional crafts, antiques, and local delicacies. The vibrant atmosphere, combined with the chance to purchase unique souvenirs, makes this shopping experience a highlight for visitors. It\'s a perfect blend of culture, history, and retail therapy in the heart of Kuching.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/carpenter_street.jpg" class="card-img-top" alt="Carpenter Street and Main Bazaar">
+                            <div class="card-body">
+                                <small class="text-muted">Sarawak</small>
+                                <h5 class="card-title">Shopping at Carpenter Street and Main Bazaar</h5>
+                                <p class="card-text">Carpenter Street and Main Bazaar are the best spots to immerse yourself in Sarawak’s cultural heritage while shopping for unique items.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Visit Bako National Park -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="sarawak" onclick="showActivityModal('Visit Bako National Park', '../Image/bako_national_park.jpg', 'Bako National Park, Sarawak\'s oldest national park, is a paradise for nature lovers and adventurers. The park is home to a diverse range of wildlife, including the rare proboscis monkey, and features a variety of landscapes, from mangrove swamps to rugged cliffs. Visitors can explore numerous hiking trails that offer stunning views and opportunities to spot wildlife. Bako is a must-visit destination for those looking to experience the raw beauty of Borneo.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/bako_national_park.jpg" class="card-img-top" alt="Bako National Park">
+                            <div class="card-body">
+                                <small class="text-muted">Sarawak</small>
+                                <h5 class="card-title">Visit Bako National Park</h5>
+                                <p class="card-text">Discover Sarawak’s oldest national park, renowned for its diverse wildlife.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Cruise Along the Sarawak River -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="sarawak" onclick="showActivityModal('Cruise Along the Sarawak River', '../Image/sarawak_river_cruise.jpg', 'A cruise along the Sarawak River offers a unique perspective of Kuching\'s charming cityscape. As you glide along the river, you\'ll pass by historic buildings, traditional Malay villages, and modern landmarks. The cruise is especially beautiful during sunset, when the sky is painted with vibrant colors. It\'s a relaxing and scenic way to explore Kuching, offering insights into the city\'s history and culture from the water.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/sarawak_river_cruise.jpg" class="card-img-top" alt="Sarawak River Cruise">
+                            <div class="card-body">
+                                <small class="text-muted">Sarawak</small>
+                                <h5 class="card-title">Cruise Along the Sarawak River</h5>
+                                <p class="card-text">Experience Kuching from a different perspective by taking a leisurely cruise along the Sarawak River.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Legoland Malaysia Resort -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="johor" onclick="showActivityModal('Legoland Malaysia Resort', '../Image/legoland_malaysia.jpg', 'Legoland Malaysia Resort in Johor is a family-friendly destination that promises fun and adventure for all ages. The resort features interactive rides, live shows, and attractions themed around the iconic Lego bricks. Highlights include the Lego Kingdoms, Lego Technic, and the Legoland Water Park. It\'s a perfect destination for families to explore, learn, and play together, making memories that will last a lifetime.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/legoland_malaysia.jpg" class="card-img-top" alt="Legoland Malaysia Resort">
+                            <div class="card-body">
+                                <small class="text-muted">Johor</small>
+                                <h5 class="card-title">Legoland Malaysia Resort</h5>
+                                <p class="card-text">Visit the first Legoland in Asia, featuring interactive rides, shows, and attractions perfect for families.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Explore Desaru Coast -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="johor" onclick="showActivityModal('Explore Desaru Coast', '../Image/desaru_coast.jpg', 'Desaru Coast in Johor is a premier vacation destination offering a blend of luxury, adventure, and natural beauty. Visitors can relax on pristine beaches, explore the Desaru Fruit Farm, or enjoy thrilling rides at the Desaru Coast Adventure Waterpark. The area is also known for its golf courses and luxurious resorts. Desaru Coast is the perfect getaway for families, couples, and anyone looking to unwind in a tropical paradise.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/desaru_coast.jpg" class="card-img-top" alt="Desaru Coast">
+                            <div class="card-body">
+                                <small class="text-muted">Johor</small>
+                                <h5 class="card-title">Explore Desaru Coast</h5>
+                                <p class="card-text">Enjoy the pristine beaches, thrilling water rides at Desaru Coast Adventure Waterpark.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Hike Gunung Ledang (Mount Ophir) -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="johor" onclick="showActivityModal('Hike Gunung Ledang (Mount Ophir)', '../Image/gunung_ledang.jpg', 'Hiking Gunung Ledang, also known as Mount Ophir, is a challenging yet rewarding experience. The trek takes you through dense rainforests, past waterfalls, and up steep slopes to reach the summit. Along the way, hikers can enjoy the diverse flora and fauna, as well as panoramic views from the top. The mountain is also steeped in legend, adding a sense of mystique to the adventure. It\'s a must-do for experienced hikers visiting Johor.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/gunung_ledang.jpg" class="card-img-top" alt="Gunung Ledang (Mount Ophir)">
+                            <div class="card-body">
+                                <small class="text-muted">Johor</small>
+                                <h5 class="card-title">Hike Gunung Ledang (Mount Ophir)</h5>
+                                <p class="card-text">Trek through lush rainforests to the summit of Gunung Ledang, Johor’s highest peak.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Explore Langkawi Island -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="kedah" onclick="showActivityModal('Explore Langkawi Island', '../Image/langkawi_sky_bridge.jpg', 'Langkawi Island is a tropical paradise known for its stunning beaches, crystal-clear waters, and lush landscapes. Visitors can explore the iconic Langkawi Sky Bridge, take a cable car ride for panoramic views, or relax on the beautiful beaches at Pantai Cenang. Langkawi is also home to the Kilim Karst Geoforest Park, where you can take a boat tour through mangroves and limestone formations. It\'s a perfect destination for nature lovers and beachgoers.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/langkawi_sky_bridge.jpg" class="card-img-top" alt="Langkawi Sky Bridge">
+                            <div class="card-body">
+                                <small class="text-muted">Kedah</small>
+                                <h5 class="card-title">Explore Langkawi Island</h5>
+                                <p class="card-text">Discover the wonders of Langkawi, from the iconic Langkawi Sky Bridge and Cable Car to the stunning beaches at Pantai Cenang.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Discover Gunung Jerai -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="kedah" onclick="showActivityModal('Discover Gunung Jerai', '../Image/gunung_jerai.jpg', 'Gunung Jerai, Kedah\'s majestic mountain retreat, offers a cool escape from the tropical heat. Visitors can hike through lush forests, explore the Forestry Museum, and enjoy panoramic views of paddy fields and the coastline. The mountain is rich in biodiversity, making it a haven for nature enthusiasts. Gunung Jerai is also steeped in history, with ancient sites and legends adding to its allure. It\'s an ideal destination for those seeking tranquility and natural beauty.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/gunung_jerai.jpg" class="card-img-top" alt="Gunung Jerai">
+                            <div class="card-body">
+                                <small class="text-muted">Kedah</small>
+                                <h5 class="card-title">Discover Gunung Jerai</h5>
+                                <p class="card-text">Visit Gunung Jerai, Kedah’s majestic mountain retreat</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Explore Kota Bharu -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="kelantan" onclick="showActivityModal('Explore Kota Bharu', '../Image/kota_bharu.jpg', 'Kota Bharu, the cultural heart of Kelantan, offers visitors a rich experience of traditional Malay culture. The city is home to vibrant markets, such as the Siti Khadijah Market, where you can find local handicrafts and delicacies. Historical sites like Istana Jahar provide insights into the region\'s royal heritage, while the Handicraft Village and Craft Museum showcase traditional Kelantanese arts. Kota Bharu is a must-visit for those interested in Malaysia\'s cultural diversity.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/kota_bharu.jpg" class="card-img-top" alt="Kota Bharu">
+                            <div class="card-body">
+                                <small class="text-muted">Kelantan</small>
+                                <h5 class="card-title">Explore Kota Bharu</h5>
+                                <p class="card-text">Discover the cultural heart of Kelantan in Kota Bharu.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Visit Wat Photivihan -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="kelantan" onclick="showActivityModal('Visit Wat Photivihan', '../Image/wat_photivihan.jpg', 'Wat Photivihan in Tumpat, Kelantan, is home to Southeast Asia\'s largest reclining Buddha statue. This serene temple offers a glimpse into the Thai-Buddhist heritage of the region, with its tranquil surroundings and intricate architecture. Visitors can explore the temple grounds, admire the impressive statue, and learn about the local religious practices. Wat Photivihan is a peaceful retreat that provides a unique cultural experience for those visiting Kelantan.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/wat_photivihan.jpg" class="card-img-top" alt="Wat Photivihan">
+                            <div class="card-body">
+                                <small class="text-muted">Kelantan</small>
+                                <h5 class="card-title">Visit Wat Photivihan</h5>
+                                <p class="card-text">Explore Wat Photivihan, home to Southeast Asia’s largest reclining Buddha statue.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Relax at Pantai Cahaya Bulan -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="kelantan" onclick="showActivityModal('Relax at Pantai Cahaya Bulan', '../Image/pantai_cahaya_bulan.jpg', 'Pantai Cahaya Bulan, also known as Moonlight Beach, is a popular destination for both locals and tourists in Kelantan. The beach is known for its soft sands, gentle waves, and beautiful sunsets. Visitors can relax under the shade of coconut trees, enjoy local seafood, or take a stroll along the shoreline. It\'s a perfect spot for a laid-back beach day, offering a peaceful escape from the hustle and bustle of everyday life.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/pantai_cahaya_bulan.jpg" class="card-img-top" alt="Pantai Cahaya Bulan">
+                            <div class="card-body">
+                                <small class="text-muted">Kelantan</small>
+                                <h5 class="card-title">Relax at Pantai Cahaya Bulan</h5>
+                                <p class="card-text">Enjoy a relaxing day at Pantai Cahaya Bulan, Kelantan’s popular beach destination. With soft sands, gentle waves, and delicious local food stalls.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Explore Jonker Street -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="melaka" onclick="showActivityModal('Explore Jonker Street', '../Image/jonker_street.jpg', 'Jonker Street in Melaka\'s Chinatown is a vibrant area known for its bustling night market, historical sites, and diverse food offerings. Visitors can explore the street\'s many antique shops, cafes, and temples, including the Cheng Hoon Teng Temple. The night market, held on weekends, is a highlight, with street food, live performances, and souvenirs. Jonker Street is a cultural and historical hub, offering a unique glimpse into Melaka\'s rich heritage.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/jonker_street.jpg" class="card-img-top" alt="Jonker Street">
+                            <div class="card-body">
+                                <small class="text-muted">Melaka</small>
+                                <h5 class="card-title">Explore Jonker Street</h5>
+                                <p class="card-text">Visit Jonker Street, the vibrant heart of Melaka’s Chinatown. Experience the bustling night market, explore historical sites.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Visit A Famosa -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="melaka" onclick="showActivityModal('Visit A Famosa', '../Image/a_famosa.jpg', 'A Famosa is one of Southeast Asia\'s oldest European architectural remains, located in Melaka. The fort, built by the Portuguese in the 16th century, is a significant historical site. Visitors can explore the remains of the fort, including the iconic Porta de Santiago gate, and learn about Melaka\'s colonial history. The nearby St. Paul\'s Hill offers panoramic views of the city and the ruins of St. Paul\'s Church, adding to the historical experience.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/a_famosa.jpg" class="card-img-top" alt="A Famosa">
+                            <div class="card-body">
+                                <small class="text-muted">Melaka</small>
+                                <h5 class="card-title">Visit A Famosa</h5>
+                                <p class="card-text">Explore the historic A Famosa fort, one of the oldest European architectural remains in Southeast Asia.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Cruise Along the Melaka River -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="melaka" onclick="showActivityModal('Cruise Along the Melaka River', '../Image/melaka_river_cruise.jpg', 'A cruise along the Melaka River offers a relaxing way to explore the city\'s historic buildings, colorful murals, and vibrant riverside life. The cruise is especially enchanting at night when the riverbanks are beautifully illuminated. Along the way, you\'ll pass by significant landmarks, providing a unique perspective of Melaka\'s rich history and culture. It\'s an ideal activity for those looking to unwind while taking in the sights of this UNESCO World Heritage city.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/melaka_river_cruise.jpg" class="card-img-top" alt="Melaka River Cruise">
+                            <div class="card-body">
+                                <small class="text-muted">Melaka</small>
+                                <h5 class="card-title">Cruise Along the Melaka River</h5>
+                                <p class="card-text">Take a relaxing cruise along the Melaka River to see the city’s historic buildings, colorful murals, and vibrant riverside life.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Visit Port Dickson -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="negeri_sembilan" onclick="showActivityModal('Visit Port Dickson', '../Image/port_dickson.jpg', 'Port Dickson is a popular beach destination in Negeri Sembilan, known for its sandy shores and tranquil waters. Visitors can enjoy a range of water sports, sunbathe on the beach, or explore nearby attractions such as the Cape Rachado Lighthouse. The area is also home to several historical sites, adding a cultural aspect to your visit. Port Dickson is perfect for a relaxing beach getaway, offering a mix of adventure and leisure activities.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/port_dickson.jpg" class="card-img-top" alt="Port Dickson">
+                            <div class="card-body">
+                                <small class="text-muted">Negeri Sembilan</small>
+                                <h5 class="card-title">Visit Port Dickson</h5>
+                                <p class="card-text">Relax at Port Dickson, enjoy water sports, sunbathe on the sandy beaches, or explore historical sites.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Explore Seremban Lake Gardens -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="negeri_sembilan" onclick="showActivityModal('Explore Seremban Lake Gardens', '../Image/seremban_lake_gardens.jpg', 'Seremban Lake Gardens is a peaceful park located in the heart of Seremban, Negeri Sembilan. The gardens are perfect for a leisurely stroll, picnicking, or birdwatching. The well-maintained grounds feature scenic lakes, walking paths, and lush greenery, providing a tranquil escape from the city. It\'s an ideal spot for families, nature lovers, and anyone looking to relax in a serene environment. The park is a hidden gem that offers a refreshing break from the hustle and bustle.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/seremban_lake_gardens.jpg" class="card-img-top" alt="Seremban Lake Gardens">
+                            <div class="card-body">
+                                <small class="text-muted">Negeri Sembilan</small>
+                                <h5 class="card-title">Explore Seremban Lake Gardens</h5>
+                                <p class="card-text">Take a leisurely stroll in a peaceful park in the heart of Seremban.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Explore Ipoh Old Town -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="perak" onclick="showActivityModal('Explore Ipoh Old Town', '../Image/ipoh_old_town.jpg', 'Ipoh Old Town is a charming area that combines colonial architecture, street art, and a vibrant food scene. Visitors can explore historical buildings, visit the famous Concubine Lane, and enjoy Ipoh\'s renowned white coffee at one of the many local cafes. The area is also known for its stunning street murals, which tell the story of the city\'s rich history. Ipoh Old Town is a must-visit for those looking to experience the unique blend of heritage and modernity.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/ipoh_old_town.jpg" class="card-img-top" alt="Ipoh Old Town">
+                            <div class="card-body">
+                                <small class="text-muted">Perak</small>
+                                <h5 class="card-title">Explore Ipoh Old Town</h5>
+                                <p class="card-text">Discover the charm of Ipoh Old Town with its colonial architecture, street art, and famous white coffee.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Visit Gua Tempurung -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="perak" onclick="showActivityModal('Visit Gua Tempurung', '../Image/gua_tempurung.jpg', 'Gua Tempurung, located in Perak, is one of the largest limestone caves in Peninsular Malaysia. The cave offers a range of guided tours, from easy walks to challenging adventures through underground streams and tunnels. Visitors can explore the stunning rock formations, learn about the cave\'s geology, and experience the thrill of caving. Gua Tempurung is a must-visit for adventure seekers and those interested in exploring Malaysia\'s natural wonders.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/gua_tempurung.jpg" class="card-img-top" alt="Gua Tempurung">
+                            <div class="card-body">
+                                <small class="text-muted">Perak</small>
+                                <h5 class="card-title">Visit Gua Tempurung</h5>
+                                <p class="card-text">The cave offers guided tours through stunning rock formations, underground streams, and challenging cave tunnels.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Explore Georgetown -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="penang" onclick="showActivityModal('Explore Georgetown', '../Image/georgetown.jpg', 'Georgetown, the capital of Penang, is a UNESCO World Heritage site known for its well-preserved colonial architecture, vibrant street art, and diverse food culture. Visitors can explore the city\'s historical buildings, such as the Pinang Peranakan Mansion and Khoo Kongsi clan house, and enjoy delicious local cuisine. Georgetown\'s blend of history, culture, and modernity makes it a top destination for those looking to experience the best of Penang.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/georgetown.jpg" class="card-img-top" alt="Georgetown">
+                            <div class="card-body">
+                                <small class="text-muted">Penang</small>
+                                <h5 class="card-title">Explore Georgetown</h5>
+                                <p class="card-text">Wander through Georgetown, a UNESCO World Heritage site known for its historical buildings, street art, and delicious food.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Visit Penang Hill -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="penang" onclick="showActivityModal('Visit Penang Hill', '../Image/penang_hill.jpg', 'Penang Hill offers breathtaking views of the island and the surrounding sea. Visitors can take the funicular railway to the top, where they\'ll find colonial bungalows, nature trails, and the charming David Brown\'s Restaurant. The cool climate and serene environment make it a perfect escape from the heat of the city. Penang Hill is a must-visit for nature lovers and those seeking a peaceful retreat with stunning vistas.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/penang_hill.jpg" class="card-img-top" alt="Penang Hill">
+                            <div class="card-body">
+                                <small class="text-muted">Penang</small>
+                                <h5 class="card-title">Visit Penang Hill</h5>
+                                <p class="card-text">Explore the hill’s colonial bungalows, nature trails, and the charming David Brown’s Restaurant.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Explore Cameron Highlands -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="pahang" onclick="showActivityModal('Explore Cameron Highlands', '../Image/cameron_highlands.jpg', 'Cameron Highlands is a popular hill station in Pahang, known for its cool climate, tea plantations, and strawberry farms. Visitors can explore the scenic landscape, visit local markets, and enjoy fresh produce. The area is also home to beautiful hiking trails, offering opportunities to explore the highlands\' natural beauty. Cameron Highlands is a perfect destination for those looking to escape the tropical heat and experience a different side of Malaysia.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/cameron_highlands.jpg" class="card-img-top" alt="Cameron Highlands">
+                            <div class="card-body">
+                                <small class="text-muted">Pahang</small>
+                                <h5 class="card-title">Explore Cameron Highlands</h5>
+                                <p class="card-text">Enjoy a scenic hike or visit the vibrant local markets for fresh produce and souvenirs.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Visit Taman Negara -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="pahang" onclick="showActivityModal('Visit Taman Negara', '../Image/taman_negara.jpg', 'Taman Negara, Malaysia\'s oldest national park, offers a wealth of adventure activities, from jungle trekking to canopy walks. The park is home to a diverse range of wildlife, including elephants and tigers, making it a haven for nature lovers. Visitors can explore the lush rainforest, navigate the park\'s rivers, and immerse themselves in the beauty of this ancient ecosystem. Taman Negara is a must-visit for anyone looking to experience the wild side of Malaysia.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/taman_negara.jpg" class="card-img-top" alt="Taman Negara">
+                            <div class="card-body">
+                                <small class="text-muted">Pahang</small>
+                                <h5 class="card-title">Visit Taman Negara</h5>
+                                <p class="card-text">Malaysia’s oldest national park, offering jungle trekking, canopy walks, and the chance to spot wildlife like elephants and tigers.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Discover Perlis State Park -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="perlis" onclick="showActivityModal('Discover Perlis State Park', '../Image/perlis_state_park.jpg', 'Perlis State Park is a hidden gem in Malaysia, offering a rich natural environment with limestone hills, caves, and diverse wildlife. Visitors can explore the park\'s trails, visit Wang Burma Cave, and enjoy birdwatching in the lush surroundings. The park\'s untouched beauty and peaceful atmosphere make it an ideal destination for nature lovers and those seeking a tranquil escape. It\'s a perfect spot for discovering Malaysia\'s lesser-known natural treasures.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/perlis_state_park.jpg" class="card-img-top" alt="Perlis State Park">
+                            <div class="card-body">
+                                <small class="text-muted">Perlis</small>
+                                <h5 class="card-title">Discover Perlis State Park</h5>
+                                <p class="card-text">Explore Perlis State Park, home to limestone hills, caves, and rich biodiversity.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Visit Kota Kayang Museum -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="perlis" onclick="showActivityModal('Visit Kota Kayang Museum', '../Image/kota_kayang_museum.jpg', 'Kota Kayang Museum in Perlis offers visitors a glimpse into the region\'s rich history and culture. The museum is set in a historical site and features exhibits on archaeology, royal heritage, and traditional crafts. Visitors can explore the museum\'s collections, learn about Perlis\'s past, and enjoy the peaceful surroundings. It\'s an ideal destination for those interested in history and culture, offering a deeper understanding of this northern Malaysian state.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/kota_kayang_museum.jpg" class="card-img-top" alt="Kota Kayang Museum">
+                            <div class="card-body">
+                                <small class="text-muted">Perlis</small>
+                                <h5 class="card-title">Visit Kota Kayang Museum</h5>
+                                <p class="card-text">Learn about the history and culture of Perlis at Kota Kayang Museum.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Visit the Petronas Twin Towers -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="kuala_lumpur" onclick="showActivityModal('Visit the Petronas Twin Towers', '../Image/petronas_twin_towers.jpg', 'The Petronas Twin Towers, an iconic symbol of Malaysia, offer visitors a chance to experience Kuala Lumpur from new heights. The towers feature the world\'s highest twin structure, with a sky bridge offering panoramic views of the city. Visitors can also explore the surrounding KLCC Park and Suria KLCC shopping mall. A visit to the towers is a must-do for anyone visiting Kuala Lumpur, providing both a cultural and architectural experience.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/petronas_twin_towers.jpg" class="card-img-top" alt="Petronas Twin Towers">
+                            <div class="card-body">
+                                <small class="text-muted">Kuala Lumpur</small>
+                                <h5 class="card-title">Visit the Petronas Twin Towers</h5>
+                                <p class="card-text">Visit the sky bridge for panoramic views of the city and explore the surrounding KLCC Park and Suria KLCC shopping mall.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Explore Batu Caves -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="kuala_lumpur" onclick="showActivityModal('Explore Batu Caves', '../Image/batu_caves.jpg', 'Batu Caves, a famous Hindu temple set in a limestone hill, is a must-visit destination in Kuala Lumpur. Visitors can climb the 272 steps to reach the cave complex, which features impressive statues and religious shrines. The caves are also home to the annual Thaipusam festival, attracting thousands of pilgrims. Batu Caves offers a unique cultural experience, blending natural beauty with religious significance.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/batu_caves.jpg" class="card-img-top" alt="Batu Caves">
+                            <div class="card-body">
+                                <small class="text-muted">Kuala Lumpur</small>
+                                <h5 class="card-title">Explore Batu Caves</h5>
+                                <p class="card-text">Climb the 272 steps to reach Batu Caves, a famous Hindu temple set in a limestone hill.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Visit Bukit Bintang -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="kuala_lumpur" onclick="showActivityModal('Visit Bukit Bintang', '../Image/bukit_bintang.jpg', 'Bukit Bintang is Kuala Lumpur\'s premier shopping and entertainment district, known for its high-end malls, vibrant street food, and bustling nightlife. Visitors can shop for luxury brands, dine at world-class restaurants, and enjoy the lively atmosphere. The area is also home to street performers, markets, and cultural attractions, making it a must-visit for anyone looking to experience the energy of Kuala Lumpur.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/bukit_bintang.jpg" class="card-img-top" alt="Bukit Bintang">
+                            <div class="card-body">
+                                <small class="text-muted">Kuala Lumpur</small>
+                                <h5 class="card-title">Visit Bukit Bintang</h5>
+                                <p class="card-text">Kuala Lumpur’s premier shopping and entertainment district. Enjoy high-end malls, vibrant street food, and a bustling nightlife scene.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Explore Labuan Island -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="labuan" onclick="showActivityModal('Explore Labuan Island', '../Image/labuan_island.jpg', 'Labuan Island is a tranquil destination known for its sandy beaches, duty-free shopping, and World War II historical sites. Visitors can relax on the beach, explore the Labuan War Cemetery and Museum, or dive into the clear waters of the Labuan Marine Park. The island\'s peaceful atmosphere and rich history make it an ideal destination for a relaxing getaway or a historical exploration.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/labuan_island.jpg" class="card-img-top" alt="Labuan Island">
+                            <div class="card-body">
+                                <small class="text-muted">Labuan</small>
+                                <h5 class="card-title">Explore Labuan Island</h5>
+                                <p class="card-text">Relax on the sandy beaches of Labuan Island, known for its duty-free shopping and World War II historical sites.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Visit the Labuan Marine Park -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="labuan" onclick="showActivityModal('Visit the Labuan Marine Park', '../Image/labuan_marine_park.jpg', 'Labuan Marine Park is a haven for divers, offering clear waters, vibrant coral reefs, and diverse marine life. The park is also known for its shipwreck diving sites, providing a unique underwater adventure. Visitors can explore the park\'s rich marine ecosystem, encounter colorful fish, and discover the hidden treasures of the deep. Labuan Marine Park is a must-visit for diving enthusiasts and anyone looking to experience Malaysia\'s underwater beauty.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/labuan_marine_park.jpg" class="card-img-top" alt="Labuan Marine Park">
+                            <div class="card-body">
+                                <small class="text-muted">Labuan</small>
+                                <h5 class="card-title">Visit the Labuan Marine Park</h5>
+                                <p class="card-text">Dive into the clear waters of Labuan Marine Park, home to vibrant coral reefs and diverse marine life.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Explore Terengganu’s Islands -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="terengganu" onclick="showActivityModal('Explore Terengganu’s Islands', '../Image/redang_island.jpg', 'Terengganu is home to some of Malaysia\'s most beautiful islands, including Redang, Perhentian, and Kapas. Visitors can enjoy snorkeling, diving, and relaxing on pristine beaches with crystal-clear waters. The islands offer a tropical paradise experience, with vibrant coral reefs, diverse marine life, and stunning natural landscapes. Exploring Terengganu\'s islands is a must-do for beach lovers and underwater enthusiasts alike.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/redang_island.jpg" class="card-img-top" alt="Redang Island">
+                            <div class="card-body">
+                                <small class="text-muted">Terangganu</small>
+                                <h5 class="card-title">Explore Terengganu’s Islands</h5>
+                                <p class="card-text">Enjoy snorkeling, diving, and pristine beaches with crystal-clear waters.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Visit the Crystal Mosque -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="terengganu" onclick="showActivityModal('Visit the Crystal Mosque', '../Image/crystal_mosque.jpg', 'The Crystal Mosque in Kuala Terengganu is a stunning example of modern Islamic architecture. Made of glass, steel, and crystal, the mosque is particularly beautiful when illuminated at night. Visitors can admire its unique design, explore the mosque\'s interior, and learn about Islamic culture. The Crystal Mosque is a must-visit for those interested in architecture and religious sites, offering a blend of spirituality and modernity.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/crystal_mosque.jpg" class="card-img-top" alt="Crystal Mosque">
+                            <div class="card-body">
+                                <small class="text-muted">Terangganu</small>
+                                <h5 class="card-title">Visit the Crystal Mosque</h5>
+                                <p class="card-text">Marvel at the Crystal Mosque in Kuala Terengganu, a modern Islamic structure made of glass, steel, and crystal.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Explore the Putrajaya Botanical Garden -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="putrajaya" onclick="showActivityModal('Explore the Putrajaya Botanical Garden', '../Image/putrajaya_botanical_garden.jpg', 'Putrajaya Botanical Garden is a vast park featuring themed gardens, walking trails, and a serene lake. Visitors can explore the various gardens, each showcasing different plant species, or take a leisurely stroll along the lake\'s edge. The garden is a perfect spot for a relaxing day out, offering a peaceful escape from the city. It\'s an ideal destination for nature lovers and those looking to unwind in a beautiful setting.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/putrajaya_botanical_garden.jpg" class="card-img-top" alt="Putrajaya Botanical Garden">
+                            <div class="card-body">
+                                <small class="text-muted">Putrajaya</small>
+                                <h5 class="card-title">Explore the Putrajaya Botanical Garden</h5>
+                                <p class="card-text">A vast park with themed gardens, walking trails, and a serene lake. It’s an ideal spot for a relaxing day out.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Visit Putra Mosque -->
+                    <div class="col-md-4 mb-4 activity-content" data-state="putrajaya" onclick="showActivityModal('Visit Putra Mosque', '../Image/putra_mosque.jpg', 'The Putra Mosque, located in Putrajaya, is an architectural masterpiece with its iconic pink dome and stunning design. Visitors can explore the mosque\'s intricate interior, learn about Islamic culture, and enjoy the serene surroundings. The mosque is situated by a beautiful lake, offering picturesque views and a peaceful atmosphere. Visiting the Putra Mosque is a must-do for anyone interested in architecture, culture, and spirituality.')"
+                    >
+                        <div class="card shadow-sm">
+                            <img src="../Image/putra_mosque.jpg" class="card-img-top" alt="Putra Mosque">
+                            <div class="card-body">
+                                <small class="text-muted">putrajaya</small>
+                                <h5 class="card-title">Visit Putra Mosque</h5>
+                                <p class="card-text">Admire the stunning Putra Mosque, an architectural masterpiece in Putrajaya.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pagination-controls text-center mt-4" id="pagination-controls">
+                        <button id="prevPage" class="btn btn-outline-primary">&laquo;</button>
+                        <!-- Page numbers will be generated by JavaScript -->
+                        <button id="nextPage" class="btn btn-outline-primary">&raquo;</button>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="backToTop"></div>
+    
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <script src="../Script/thingstodo.js"></script>
+        <!-- Modal Structure -->
+        <div class="modal fade" id="activityModal" tabindex="-1" role="dialog" aria-labelledby="activityModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalTitle">Activity Title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img id="modalImage" src="" alt="Activity Image" class="img-fluid mb-3">
+                  <p id="modalDescription"></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+        </div>
+          
+  
+</body>
+</html>
+

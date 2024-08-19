@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Style/cstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    
+
+</head>
+<body>
+    <!-- Navigation bar -->
+   <div id="nav-container"></div>
+   <script>
+       $(document).ready(function(){
+           $("#nav-container").load("navbar.html");
+       });
+   </script>
+
+   <section class="home" id="home">
+    <div class ="title">
+        <h1>Welcome to Malaysia</h1>
+    </div>
+   </section>
+
+   <section class="cuisines-section" id="cuisinesSection">
+    <h2>Malaysian Cuisines</h2>
+    <div class="underline"></div>
+
+    <div class="cuisines-container">
+        <div class="cuisine-content" id="cuisineSlider">
+            <div class="col-content">
+                <h3>Perak</h3>
+                <img src="../Image/nasikandar.jpg" alt="Nasi Kandar">
+                <p><strong>Nasi Kandar</strong>: A meal of steamed rice served with various curries and side dishes.</p>
+            </div>
+            <div class="col-content">
+                <h3>Sabah</h3>
+                <img src="../Image/hinava.jpg" alt="Hinava">
+                <p><strong>Hinava</strong>: A traditional Kadazan-Dusun dish made of raw fish cured with lime juice.</p>
+            </div>
+            <div class="col-content">
+                <h3>Perak</h3>
+                <img src="../Image/Mee Rebus.jpg" alt="Mee Rebus">
+                <p><strong>Mee Rebus</strong>:This noodle dish is served in a thick, spicy-sweet gravy made from potatoes, peanuts, and shrimp paste, often garnished with hard-boiled eggs and tofu.</p>
+            </div>
+            <div class="col-content">
+                <h3>Melacca</h3>
+                <img src="../Image/Chicken Rice Balls.jpg" alt="Chicken Rice Balls">
+                <p><strong>Chicken Rice Balls</strong>:  A unique take on the traditional chicken rice, in Melaka, the rice is shaped into small balls and served with roasted or steamed chicken.</p>
+            </div>
+            <div class="col-content">
+                <h3>Penang</h3>
+                <img src="../Image/Penang Rojak.jpg" alt="Penang Rojak">
+                <p><strong>Penang Rojak</strong>:  A fruit and vegetable salad dish tossed with a thick, sweet, and spicy sauce made from shrimp paste, often topped with crushed peanuts and sesame seeds.</p>
+            </div>
+            <div class="col-content">
+                <h3>Langkawi</h3>
+                <img src="../Image/Ikan Bakar.jpg" alt="Ikan Bakar">
+                <p><strong>Ikan Bakar</strong>: Grilled fish marinated with spices, a favorite among seafood lovers.</p>
+            </div>
+            <div class="col-content">
+                <h3>Melacca</h3>
+                <img src="../Image/Nyonya Laksa.jpeg" alt="Nyonya Laksa">
+                <p><strong>Nyonya Laksa</strong>: A rich, spicy noodle soup with a blend of Chinese and Malay flavors.</p>
+            </div>
+            <div class="col-content">
+                <h3>Sabah</h3>
+                <img src="../Image/ambuyat.jpg" alt="ambuyat">
+                <p><strong>Ambuyat</strong>:  A traditional dish from the indigenous people of Sabah, Ambuyat is a starchy dish made from sago flour, often eaten with a variety of side dishes and dipping sauces.</p>
+            </div>
+            <div class="col-content">
+                <h3>Kuala Lumpur</h3>
+                <img src="../Image/Hokkien Mee.jpg" alt="Hokkien Mee">
+                <p><strong>Hokkien Mee</strong>:  A popular dish in KL, Hokkien Mee is a stir-fried noodle dish in a dark soy sauce, typically with pork, prawns, squid, and crispy pork lard.</p>
+            </div>
+            <div class="col-content hidden">
+                <h3>Penang</h3>
+                <img src="../Image/CKT.jpg" alt="Char Kway Teow">
+                <p><strong>Char Kway Teow</strong>: Stir-fried flat rice noodles with prawns, eggs, and bean sprouts.</p>
+            </div>
+            <div class="col-content hidden">
+                <h3>Kuala Lumpur</h3>
+                <img src="../Image/nasi.jpg" alt="Nasi Lemak">
+                <p><strong>Nasi Lemak</strong>: The iconic Malaysian dish of fragrant rice cooked in coconut milk.</p>
+            </div>
+        </div>
+        <div class="button-container">
+            <button class="slider-btn" onclick="prevCuisine()">Prev</button>
+            <button class="slider-btn" onclick="nextCuisine()">Next</button>
+        </div>
+    </div>
+</section>
+
+
+
+   <!-- Back To Top Button -->
+   <div id="backToTop"></div>
+   <script>
+     $(document).ready(function(){
+           $("#backToTop").load("toTopButton.html");
+        });
+   </script>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+    <script>
+        $(document).ready(function(){
+            $("#footer-container").load("footer.html");
+        });
+    </script>
+
+
+
+   <script src="../Script/cscript.js"></script>
+
+
+</body>
+</html>

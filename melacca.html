@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../Style/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" loop autoplay muted preload="auto">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+</head>
+<body>
+    <div id="nav-container"></div>
+   <script>
+       $(document).ready(function(){
+           $("#nav-container").load("navbar.html");
+       });
+   </script>
+
+    <section class="desHome" id="desHhome">
+        <div class="video-container">
+            <video src="https://videos.pexels.com/video-files/20565329/20565329-uhd_2560_1440_30fps.mp4" loop autoplay muted></video>
+        </div>     
+        <h5 class="desName">Melacca</h5>
+        <div class="desButton">
+            <a href="#placeIntro" class="btn">Explore Now</a>  
+        </div>
+
+        <h6>Hello  |  Apa Khabar  |  你好</h6>
+        <hr>
+    </section>
+
+    <section class="placeIntro" id="placeIntro">
+        <div class="line"></div>
+        <div class="section">
+            <div class="drow">
+                <div class="col content-col"> 
+                    <h1>About</h1>
+                    <p><b>Melaka: A Walk Through History.</b> Step back in time in Melaka, a charming city steeped in history and culture. Discover the remnants of Portuguese and Dutch colonial influence in its well-preserved architecture. Explore the vibrant Chinatown and Little India, immersing yourself in the local way of life. Indulge in the rich flavors of Peranakan cuisine, a unique blend of Malay, Chinese, and Indian influences. Melaka offers a captivating journey through the past.</p>
+                </div>
+                <div class="col image-col">
+                    <div class="image-gallery">
+                        <img src="https://cdn.pixabay.com/photo/2015/09/25/10/12/river-957016_1280.jpg" alt="">
+                        <img src="https://cdn.pixabay.com/photo/2020/03/18/08/45/malacca-mosque-4943291_1280.jpg" alt="">
+                        <img src="https://cdn.pixabay.com/photo/2018/08/13/05/53/malaysia-3602332_1280.jpg" alt="">
+                        <img src="https://images.unsplash.com/photo-1680184648237-fad51c79157b?q=80&w=979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <div class="line"></div>
+
+    <section class="newSection" id="newSection">
+        <h6> Places to Go </h6>
+        <div class="container">
+            <ul class="popular-list">
+                <li>
+                    <div class="popular-card">
+
+                        <figure class="card-img">
+                        <img src="https://www.holidify.com/images/cmsuploads/compressed/800px-A_Famosa_1_20200109190804.jpg" loading="lazy">
+                        </figure>
+                        <div class="card-content">
+                            <div class="card-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                            </div>
+                            <h3 class="card-title">A' Famosa</h3>
+                            <p class="card-text">A former Portuguese Fortress</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="popular-card">
+
+                        <figure class="card-img">
+                        <img src="https://www.holidify.com/images/cmsuploads/compressed/1(8)_20191205113323.jpg" loading="lazy">
+                        </figure>
+                        <div class="card-content">
+                            <div class="card-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                            </div>
+                            <h3 class="card-title">Shore Sky Tower</h3>
+                            <p class="card-text"> Breathtaking view up to 50 km</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="popular-card">
+                        <figure class="card-img"><img src="https://www.holidify.com/images/cmsuploads/compressed/MelakaMalaccaRiver_20230503133540.jpg" loading="lazy"></figure>
+                        <div class="card-content">
+                            <div class="card-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                            </div>
+                            <h3 class="card-title">Melaka River Cruise</h3>
+                            <p class="card-text"> 45-minute round trip cruise</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <div class="line"></div>
+
+    <section class="newSection" id="newSection">
+        <div class="drow">
+            <div class="col content-col">
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127576.84040288485!2d102.16910080318262!3d2.2375481802785226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d1ee278e8c65dd%3A0x32a7281769e016a!2sMalacca!5e0!3m2!1sen!2smy!4v1723738203405!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div> 
+            </div>
+            <div class="col content-col">
+                <h2>Travel Tips</h2>
+                <p>
+                    <ul style="list-style-type:circle;">
+                    <li>Stay safe, be aware of your surroundings</li>
+                    <li>Use reputable transportation</li>
+                    <li>Consider travel insurance</li>
+                    <li>Respect local customs and traditions</li>
+                    <li>Pack light, dress comfortably</li>
+                    <li>Stay hydrated, especially in hot weather</li>
+                    <li>Capture unforgettable memories</li>
+                  </ul>
+                </p>
+            </div>
+        </div>   
+    </section>
+
+    <!-- Back To Top Button -->
+    <div id="backToTop"></div>
+    <script>
+      $(document).ready(function(){
+            $("#backToTop").load("toTopButton.html");
+        });
+    </script>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+    <script>
+        $(document).ready(function(){
+            $("#footer-container").load("footer.html");
+        });
+    </script>
+  
+</body>
+</html>

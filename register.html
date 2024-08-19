@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../Style/styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div id="nav-container"></div>
+    <script>
+      $(document).ready(function(){
+          $("#nav-container").load("navbar.html");
+      });
+    </script>
+
+    <div class="form-container">
+        <form id="registerForm">
+            <h2>Register</h2>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <div class="password-container">
+                <input class="password" type="password" id="password" name="password" required>
+                <span class="password-toggle-icon"><i class="fas fa-eye"></i></span>
+            </div>
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the <a href="#">terms and conditions</a></label>
+            </div>
+
+            <button type = "submit">Register</button>
+            <br>
+
+            <div class="line-with-text"><span>or</span></div>
+
+            <a href="#" class="login-btn google-btn" id="google-signin" ><img src="../Image/google_logo.svg" alt="Google Logo">Continue with Google</a>
+            <a href="#" class="login-btn facebook-btn" id="facebook-signin"> <img src="../Image/facebook_logo.svg" alt="Facebook Logo">Continue with Facebook</a>
+            <a href="#" class="login-btn apple-btn" id="apple-signin"><img src="../Image/apple_logo.svg" alt="Apple Logo">Continue with Apple</a>
+            <div class="form-footer">
+                Already have an account? 
+                <a href="signin.html">Sign In</a>
+            </div>
+        </form>
+    </div>
+
+    <!-- Back To Top Button -->
+    <div id="backToTop"></div>
+    <script>
+        $(document).ready(function(){
+            $("#backToTop").load("toTopButton.html");
+        });
+    </script>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+    <script>
+        $(document).ready(function(){
+            $("#footer-container").load("footer.html");
+        });
+    </script>
+    <script src="../Script/script2.js"></script>
+</body>
+</html>

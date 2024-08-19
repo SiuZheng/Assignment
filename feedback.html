@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Page</title>
+  <link rel="stylesheet" href="../Style/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body background = "../Image/4k.jpg">
+  <!-- Navigation bar -->
+  <div id="nav-container"></div>
+  <script>
+      $(document).ready(function(){
+          $("#nav-container").load("navbar.html");
+      });
+  </script>
+
+  <div class ="form-container">
+
+    <h1>Feedback Form</h1>
+    <br>
+
+    <form id="feedback-form">
+
+      <label for="name">Name :</label>
+      <input type="text" id="name" name="name" placeholder = " Enter your name" required>
+      <br>
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" placeholder = " Enter your email" required>
+      <br>
+      <label for="subject">Subject :</label>
+      <input type="text" id="subject" name="subject" placeholder = " Enter your subject"required>
+      <br>
+      <label for="feedback">Feedback:</label>
+      <textarea id="feedback" name="feedback" placeholder = " Enter your feedback" required></textarea>
+      <br><br>
+      <button class = "center-button" onclick ="checkFilled()" >Submit &rarr; </button>
+
+      <div id="verificationModal" class="modal">
+        <div class="modal-content">
+
+          <span class="close">&times;</span>
+          <h2>Confirm Your Information</h2>
+          <hr>
+          <br>
+          <p id="confirmText"></p>
+          <button id="confirmButton" onclick = "showRatingModal()">Confirm</button>
+          <button id="cancelButton" onclick = "closeVerificationModal()">Cancel</button>
+
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div id="ratingModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close" onclick = submitForm()>&times;</span>
+      <h1> Rate Us </h1>
+      <hr>
+      <br>
+      
+      <form id = rating-form >
+
+        <h2>Rate Ease of Use:</h2>
+        <br>
+
+        <div class="ease-of-use-rating">
+            
+            <input type="radio" id="easy" name="ease-of-use" value="easy" />
+            <label for="easy">Easy</label><br>
+            <input type="radio" id="moderate" name="ease-of-use" value="moderate" />
+            <label for="moderate">Moderate</label><br>
+            <input type="radio" id="difficult" name="ease-of-use" value="difficult" />
+            <label for="difficult">Difficult</label>
+            
+        </div>
+
+        <br>
+        <h2>Rate Visual Appeal:</h2>
+        <br>
+        <div class="visual-appeal-rating">
+          <input type="radio" id="attractive" name="visual-appeal" value="attractive" />
+          <label for="attractive">Attractive</label>
+          <input type="radio" id="user-friendly" name="visual-appeal" value="user-friendly" />
+          <label for="user-friendly">User-Friendly</label>
+          <input type="radio" id="modern" name="visual-appeal" value="modern" />
+          <label for="modern">Modern</label>
+        </div>
+
+        <br>
+        <h2 class = center-title>Overall satisfaction rating</h2>
+
+        <div class="star-rating">
+          <input type="radio" id="5-stars" name="rating" value="5" />
+          <label for="5-stars" class="star">&#9733;</label>
+          <input type="radio" id="4-stars" name="rating" value="4" />
+          <label for="4-stars" class="star">&#9733;</label>
+          <input type="radio" id="3-stars" name="rating" value="3" />
+          <label for="3-stars" class="star">&#9733;</label>
+          <input type="radio" id="2-stars" name="rating" value="2" />
+          <label for="2-stars" class="star">&#9733;</label>
+          <input type="radio" id="1-star" name="rating" value="1" />
+          <label for="1-star" class="star">&#9733;</label>
+        </div>
+
+        <hr>
+        <br>
+        
+        <button class = "center-button" type="submit" onclick ="showRatingModal()" >Submit &rarr; </button>
+     
+      </form>
+    </div>
+  </div>
+
+  <div id="status"></div>
+
+  <!-- Back To Top Button -->
+  <div id="backToTop"></div>
+  <script>
+    $(document).ready(function(){
+      $("#backToTop").load("toTopButton.html");
+      });
+  </script>
+
+   <!-- Footer -->
+   <div id="footer-container"></div>
+   <script>
+      $(document).ready(function(){
+        $("#footer-container").load("footer.html");
+        });
+    </script>
+
+  <script src="../Script/script.js"></script>
+</body>
+</html>

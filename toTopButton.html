@@ -1,0 +1,58 @@
+<a class="buttonToTop">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+        <path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/>
+    </svg>
+</a>
+
+<style>
+    .buttonToTop {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        background: #aa4848;
+        box-shadow: 0 0 10px rgba(0,0,0,0.25);
+        border: none;
+        outline: none;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none;
+        transition: all .4s;
+        opacity: 0; /* Start hidden */
+    }
+
+    .buttonToTop:hover {
+        background: #aa505077;
+    }
+
+    .buttonToTop.active {
+        bottom: 32px;
+        pointer-events: auto;
+        opacity: 1;
+    }
+</style>
+
+<script>
+    $(document).ready(function(){
+        const toTop = document.querySelector(".buttonToTop");
+
+        window.addEventListener("scroll", () => {
+            if (window.pageYOffset > 100) {
+                toTop.classList.add("active");
+            } else {
+                toTop.classList.remove("active");
+            }
+        });
+
+        toTop.addEventListener("click", () => {
+            window.scrollTo({   
+                top: 0,
+                behavior: "smooth"   
+            });
+        });
+    });
+</script>

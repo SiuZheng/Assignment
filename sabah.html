@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../Style/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" loop autoplay muted preload="auto">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+</head>
+<body>
+    <div id="nav-container"></div>
+   <script>
+       $(document).ready(function(){
+           $("#nav-container").load("navbar.html");
+       });
+   </script>
+
+    <section class="desHome" id="desHhome">
+        <div class="video-container">
+            <video src="https://videos.pexels.com/video-files/855633/855633-hd_1920_1080_25fps.mp4" loop autoplay muted></video>
+        </div>     
+        <h5 class="desName">Sabah</h5>
+        <div class="desButton">
+            <a href="#placeIntro" class="btn">Explore Now</a>  
+        </div>
+
+        <h6>Hello  |  Apa Khabar  |  你好</h6>
+        <hr>
+    </section>
+
+    <section class="placeIntro" id="placeIntro">
+        <div class="line"></div>
+        <div class="section">
+            <div class="drow">
+                <div class="col content-col"> 
+                    <h1>About</h1>
+                    <p><b>Sabah: Borneo's Untamed Beauty</b> A treasure trove of natural wonders, invites explorers to immerse themselves in the heart of Borneo. Encounter diverse wildlife, from orangutans to exotic birds, as you trek through lush rainforests or dive into crystal-clear waters. Climb the iconic Mount Kinabalu, a challenge for avid adventurers, or relax on pristine beaches. Experience the warm hospitality of the locals and discover the hidden gems of this extraordinary destination.</p>
+                </div>
+                <div class="col image-col">
+                    <div class="image-gallery">
+                        <img src="https://images5.alphacoders.com/748/thumbbig-748010.webp" alt="">
+                        <img src="https://images.pexels.com/photos/1050597/pexels-photo-1050597.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                        <img src="https://sabahtourism.com/assets/uploads/RS30761_21.jpeg" alt="">
+                        <img src="https://www.infosabah.com.my/images/2019/11/22/ilovekk_large.jpg" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="line"></div>
+
+    <section class="newSection" id="newSection">
+        <h6> Places to Go </h6>
+        <div class="container">
+            <ul class="popular-list">
+                <li>
+                    <div class="popular-card">
+
+                        <figure class="card-img">
+                        <img src="https://www.holidify.com/images/cmsuploads/compressed/33026402958_f7aed5713f_k_20200129143904.jpg" loading="lazy">
+                        </figure>
+                        <div class="card-content">
+                            <div class="card-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                            </div>
+                            <h3 class="card-title">Tanjung Aru Beach</h3>
+                            <p class="card-text"> Best sunset view in the world</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="popular-card">
+
+                        <figure class="card-img">
+                        <img src="https://sabahtravel-assets.s3.amazonaws.com/images/20230116-paved-20200214-aoy0q-mabul-water-bungalow-ch" loading="lazy">
+                        </figure>
+                        <div class="card-content">
+                            <div class="card-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                            </div>
+                            <h3 class="card-title">Semporna</h3>
+                            <p class="card-text"> World's greatest dive sites</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="popular-card">
+                        <figure class="card-img"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/9f/3b/44/gaya-street-sunday-market.jpg?w=1200&h=1200&s=1" loading="lazy"></figure>
+                        <div class="card-content">
+                            <div class="card-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                            </div>
+                            <h3 class="card-title">Gaya Street</h3>
+                            <p class="card-text"> Sunday local market</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="line"></div>
+
+    <section class="newSection" id="newSection">
+        <div class="drow">
+            <div class="col content-col">
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2032540.1749266328!2d115.98467183628902!3d5.741191495692846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32155171c8bc8a9d%3A0x889d1e436c96b307!2sSabah!5e0!3m2!1sen!2smy!4v1723738076316!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div> 
+            </div>
+            <div class="col content-col">
+                <h2>Travel Tips</h2>
+                <p>
+                    <ul style="list-style-type:circle;">
+                    <li>Stay safe, be aware of your surroundings</li>
+                    <li>Use reputable transportation</li>
+                    <li>Consider travel insurance</li>
+                    <li>Respect local customs and traditions</li>
+                    <li>Pack light, dress comfortably</li>
+                    <li>Stay hydrated, especially in hot weather</li>
+                    <li>Capture unforgettable memories</li>
+                  </ul>
+                </p>
+            </div>
+        </div>   
+    </section>
+
+      <!-- Back To Top Button -->
+      <div id="backToTop"></div>
+      <script>
+        $(document).ready(function(){
+              $("#backToTop").load("toTopButton.html");
+           });
+      </script>
+
+     <!-- Footer -->
+     <div id="footer-container"></div>
+     <script>
+         $(document).ready(function(){
+             $("#footer-container").load("footer.html");
+         });
+     </script>
+  
+</body>
+</html>

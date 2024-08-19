@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <link rel="stylesheet" href="../Style/fstyle.css">
+    <title>Festivals in Malaysia</title>
+</head>
+<body>
+    <!-- Navigation bar -->
+   <div id="nav-container"></div>
+   <script>
+       $(document).ready(function(){
+           $("#nav-container").load("navbar.html");
+       });
+   </script>
+
+    <section class="home" id="home">
+        <div class ="title">
+            <h1>Welcome to Malaysia</h1>
+        </div>
+    </section>
+
+    <!-- Festivals Section -->
+    <section class="festivals-section" id="festivalsSection">
+        <h2>Culture in Malaysia</h2>
+        <div class="underline"></div>
+
+        <div class="festival-container">
+            <div class="festival" id="festival1">
+                <img src="../Image/Thaipusam.jpg" alt="Thaipusam">
+                <div class="description">
+                    <h3>Thaipusam</h3>
+                    <p>This Hindu festival is particularly significant in Malaysia, celebrated with great fervor at Batu Caves in Selangor. Devotees carry kavadis (decorated structures) and perform acts of devotion, such as piercing their bodies, as offerings to Lord Murugan.</p>
+                </div>
+            </div>
+            <div class="festival" id="festival2">
+                <img src="../Image/Hari Raya.jpg" alt="Hari Raya">
+                <div class="description">
+                    <h3>Hari Raya Aidilfitri (Eid al-Fitr)</h3>
+                    <p>Hari Raya Aidilfitri celebrated by Muslims nationwide, this festival marks the end of Ramadan, the Islamic holy month of fasting. It's a time for forgiveness, visiting family and friends, and feasting on traditional Malay dishes like rendang and ketupat.</p>
+                </div>
+            </div>
+            <div class="festival" id="festival2">
+                <img src="../Image/Deepavali.jpg" alt="Deepavali">
+                <div class="description">
+                    <h3>Deepavali (Diwali)</h3>
+                    <p>Known as the Festival of Lights, Deepavali is celebrated by Hindus in Malaysia. It signifies the victory of light over darkness and good over evil. Homes are decorated with oil lamps, and there are prayers, feasts, and sharing of sweets.</p>
+                </div>
+            </div>
+            <div class="festival" id="festival2">
+                <img src="../Image/Hari Gawai.jpg" alt="Hari Gawai">
+                <div class="description">
+                    <h3>Hari Gawai</h3>
+                    <p>Celebrated by the Dayak community in Sarawak, Gawai marks the end of the rice harvest. It's a time for thanksgiving, traditional dances, music, and the sharing of tuak (rice wine). The celebrations often last for several days.</p>
+                </div>
+            </div>
+            <div class="festival" id="festival2">
+                <img src="../Image/Merdeka.jpg" alt="Merdeka">
+                <div class="description">
+                    <h3>Merdeka Day (Independence Day)</h3>
+                    <p>Celebrated on August 31st, Merdeka Day marks Malaysia’s independence from British rule in 1957. It’s a national holiday filled with patriotic events, parades, fireworks, and various cultural performances across the country.</p>
+                </div>
+            </div>
+            <div class="festival" id="festival3">
+                <img src="../Image/Chinese New Year.jpg" alt="Chinese New Year">
+                <div class="description">
+                    <h3>Chinese New Year</h3>
+                    <p>Chinese New Year is a vibrant celebration with lion dances, fireworks, and family gatherings to usher in the lunar new year.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <script src="../Script/fscript.js"></script>
+
+    
+    <!-- Footer -->
+    <div id="footer-container"></div>
+    <script>
+        $(document).ready(function(){
+            $("#footer-container").load("footer.html");
+        });
+    </script>
+     <!-- Back To Top Button -->
+     <div id="backToTop"></div>
+     <script>
+       $(document).ready(function(){
+             $("#backToTop").load("toTopButton.html");
+          });
+     </script>
+
+</body>
+</html>

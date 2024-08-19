@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../Style/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+   <div id="nav-container"></div>
+   <script>
+       $(document).ready(function(){
+           $("#nav-container").load("navbar.html");
+       });
+   </script>
+
+     <!-- Cookies Consent -->
+     <div class="wrapper">
+        <header>
+            <i class="bx bx-cookie"></i>
+            <h2>Cookies Consent</h2>
+        </header>
+        <div class="data">
+            <p>This website uses cookies to ensure you get the best experience on our site. Please accept cookies for an enhanced browsing experience.</p>
+        </div>
+        <div class="buttons">
+            <button class="button" id="acceptBtn">Accept</button>
+            <button class="button" id="declineBtn">Decline</button>
+        </div>
+    </div>
+
+    <script>
+        const cookieBox = document.querySelector(".wrapper"),
+              acceptBtn = document.getElementById("acceptBtn"),
+              declineBtn = document.getElementById("declineBtn");
+
+        const showCookieConsent = () => {
+            const cookiesAccepted = document.cookie.includes("cookieBy=malaysiaTourism");
+            if (!cookiesAccepted) {
+                cookieBox.classList.add("show");
+            }
+        };
+
+        acceptBtn.addEventListener("click", () => {
+            document.cookie = "cookieBy=malaysiaTourism; max-age=" + 60 * 60 * 24 * 30;
+            cookieBox.classList.remove("show");
+        });
+
+        declineBtn.addEventListener("click", () => {
+            cookieBox.classList.remove("show");
+        });
+
+        window.addEventListener("load", showCookieConsent);
+    </script>
+    
+
+
+   <section class="home" id="home">
+    <div class ="title">
+        <h1>Welcome to Malaysia</h1>
+    </div>
+    <div class="exbutton">
+      <a href="#next-section" class="btn">Explore Now</a>  
+    </div>
+   </section>
+
+   <section class="next-section" id="next-section">
+    <h2>Destinations</h2>
+    <div class="underline"></div>
+
+    <div class="destination-container">
+        <div class="destination-content">
+            <div class="col-content">
+                <a href="kl.html">
+                    <img src="../Image/tourist-places-in-malaysia.jpg"></a>
+                    <label><h3>Kuala Lumpur</h3>
+                    <p>Capital city of Malaysia</p></label>
+                
+            </div>
+            <div class="col-content">
+                <a href="sabah.html">
+                    <img src="../Image/mountKK.jpg"></a> 
+                    <label><h3>Sabah</h3>
+                    <p>Adventure in Borneo's wilderness</p></label>
+                 
+            </div>
+            <div class="col-content">
+                <a href="melacca.html">
+                    <img src="../Image/Melaka.jpg"></a>
+                    <label><h3>Melacca</h3>
+                    <p>Historic city with Portuguese influence</p></label>             
+            </div>
+            <div class="col-content">
+                <a href="penang.html">
+                    <img src="../Image/penang.jpg"></a>
+                    <label><h3>Penang</h3>
+                    <p>Where heritage, culture, and cuisine thrive</p></label>         
+            </div>
+            <div class="col-content">
+                <a href="langkawi.html">
+                    <img src="../Image/langkawi.jpg"></a>
+                    <label><h3>Langkawi</h3>
+                    <p>Tropical island paradise</p></label>
+            </div>
+
+            <div class="col-content">
+                <a href="perak.html">
+                    <img src="../Image/perak.jpg"></a>
+                    <label><h3>Perak</h3>
+                    <p>Discover hidden natural treasures</p></label> 
+            </div>
+
+        </div>
+    </div>
+    </section>
+
+    <section class="newSection">
+        <h2>Apply for Your Personalized Tour Package</h2>
+         <div class="underline"></div>
+        <div class="Newcontainer">
+            <div class="Newrow">
+                <!-- Left Column (Blank) -->
+                <div class="left-column">
+                    <div class="testimonials">
+                        <h3>What Our Customers Say</h3>
+                        <div class="testimonial">
+                            <p>"Had an amazing experience! The personalized tour was just what I needed." - Alex T.</p>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="testimonial">
+                            <p>"The best vacation ever! Everything was perfectly organized." - Maria S.</p>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="testimonial">
+                            <p>"Wonderful service and beautiful destinations. Highly recommend!" - James L.</p>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="testimonial">
+                            <p>"Fantastic trip with lots of personal touches. Couldn't have asked for more." - Emma R.</p>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="testimonial">
+                            <p>"Everything was well-planned and enjoyable. A memorable experience!" - Olivia W.</p>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-info">
+                        <h3>Need Help?</h3>
+                        <p>Call Us: <a>+60 1012345678</a></p>
+                        <p>Email: <a>malaysiatourism@gmail.com</a></p>
+                    </div>
+                </div>
+
+    
+                <!-- Right Column (Form) -->
+                <div class="right-column">
+                    <form id="tour-package-form">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+    
+                        <label for="people">Number of People:</label>
+                        <input type="number" id="people" name="people" min="1" required>
+    
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+    
+                        <label for="state">Choose State:</label>
+                        <select id="state" name="state" required>
+                            <option value="kuala_lumpur">Kuala Lumpur</option>
+                            <option value="penang">Penang</option>
+                            <option value="sabah">Sabah</option>
+                            <option value="melacca">Melacca</option>
+                            <option value="langkawi">Langkawi</option>
+                            <option value="perak">Perak</option>
+                        </select>
+    
+                        <label for="budget">Budget (MYR):</label>
+                        <input type="number" id="budget" name="budget" min="1" required>
+    
+                        <label for="preferences">Travel Preferences (Optional):</label>
+                        <textarea id="preferences" name="preferences" placeholder="e.g., Adventure, Relaxation, Culture"></textarea>
+    
+                        <label for="date">Preferred Travel Date:</label>
+                        <input type="date" id="date" name="date">
+    
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Confirmation Modal -->
+    
+
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Submission Successful</h2>
+            <p>Your application has been successfully submitted. Please check your email for further information.</p>
+        </div>
+    </div>
+
+    <script>
+
+    document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('tour-package-form'); // Adjusted ID
+    const modal = document.getElementById('confirmationModal');
+    const closeButton = document.querySelector('.close');
+
+    // Load data from localStorage
+    if (localStorage.getItem('formData')) {
+        const savedData = JSON.parse(localStorage.getItem('formData'));
+        for (const [key, value] of Object.entries(savedData)) {
+            const input = form.querySelector(`[name="${key}"]`);
+            if (input) input.value = value;
+        }
+    }
+
+    // Load data from sessionStorage
+    if (sessionStorage.getItem('formData')) {
+        const savedData = JSON.parse(sessionStorage.getItem('formData'));
+        for (const [key, value] of Object.entries(savedData)) {
+            const input = form.querySelector(`[name="${key}"]`);
+            if (input) input.value = value;
+        }
+    }
+
+    // Form submit event
+    form.addEventListener('submit', (event) => {
+        event.preventDefault(); // Prevent the default form submission
+
+        const formData = new FormData(form);
+        const data = {};
+        formData.forEach((value, key) => {
+            data[key] = value;
+        });
+
+        // Store in cookies
+        document.cookie = `formData=${encodeURIComponent(JSON.stringify(data))}; path=/`;
+
+        // Store in localStorage
+        localStorage.setItem('formData', JSON.stringify(data));
+
+        // Store in sessionStorage
+        sessionStorage.setItem('formData', JSON.stringify(data));
+
+        // Show the confirmation modal
+        modal.style.display = 'block';
+
+        // Clear form
+        form.reset();
+    });
+
+    // Close the modal
+    closeButton.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    // Close the modal if the user clicks outside of it
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
+
+    </script>
+    
+
+
+    <!-- Load Facebook SDK
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0&appId=YOUR_APP_ID&autoLogAppEvents=true"></script>
+
+    <button id="share-facebook">Share on Facebook</button>
+    <script>
+        $(document).ready(function() {
+          $("#share-facebook").click(function() {
+            FB.ui({
+              method: 'share',
+              href: 'www.facebook.com' 
+            }, function(response) {});
+          });
+        });
+        </script> -->
+
+
+     <!-- Back To Top Button -->
+    <div id="backToTop"></div>
+    <script>
+    $(document).ready(function(){
+    $("#backToTop").load("toTopButton.html");
+         });
+    </script>
+
+     <!-- Footer -->
+     <div id="footer-container"></div>
+     <script>
+         $(document).ready(function(){
+             $("#footer-container").load("footer.html");
+         });
+     </script>
+</body>
+</html>
+

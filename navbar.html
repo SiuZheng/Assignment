@@ -1,0 +1,149 @@
+<nav>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav{
+            background-color:rgba(255, 255, 255);
+            box-shadow: 3px 3px 5px rgba(0,0,0,0.1) 
+        }
+
+        nav ul{
+            width:100%;
+            list-style:none ;
+            display:flex ;
+            justify-content: flex-end ;
+            align-items: center;
+        }
+
+        nav li{
+            height:50px ;
+            
+        }
+
+        nav a{
+            height: 100% ;
+            padding: 0 30px !important;
+            text-decoration:none !important;
+            display:flex ;
+            align-items: center;
+            color: black !important
+        }
+
+        nav a:hover{
+            background-color:#ad4b4b3b
+        }
+
+        nav li:first-child{
+            margin-right:auto;
+        }
+
+        .logo {
+            height: 40px; /* Adjust logo size as needed */
+        }
+
+        .sidebar{
+            position: fixed;
+            top:0;
+            right:0;
+            height:100vh;
+            width:250px;
+            z-index:999;
+            background-color:rgba(255, 255, 255);
+            backdrop-filter:blur(50px);
+            box-shadow: -10px 0 10px rgba(0,0,0,s0.1);
+            display:none;
+            flex-direction:column; 
+            align-items:flex-start; /*align text to the left */
+            justify-content:flex-start /*align text to the top */
+        }
+
+        .sidebar li{
+            width:100%;
+        }
+
+        .sidebar a{
+            width:100%;
+        }
+
+    @media(max-width:768px){
+    .hideOnMobile{
+        display:none; /*the things will not be visible on devices that are smaller than 800px*/
+    }}
+
+    @media(max-width:400px){
+    .sidebar{
+        width:100%;
+    }}
+    </style>
+
+    <nav class="navbar">
+        <script>
+            function showSideBar(){
+                const sidebar=document.querySelector('.sidebar'); //query selectors to select elements i nthe side bar
+                sidebar.style.display='flex';
+            }
+            function hideSideBar(){
+                const sidebar=document.querySelector('.sidebar'); //query selectors to select elements i nthe side bar
+                sidebar.style.display='none';
+            }
+            function logout() {
+                // Remove the 'isLoggedIn' flag from sessionStorage
+                sessionStorage.removeItem('isLoggedIn');
+
+                // Change the button text back to "Sign In"
+                document.getElementById('logoutButtonMain').innerHTML = '<a href="ass.html" id="authButtonMain">Sign in</a>';
+                document.getElementById('logoutButtonSidebar').innerHTML = '<a href="ass.html" id="authButtonSidebar">Sign in</a>';
+            }
+
+            if(sessionStorage.getItem('isLoggedIn') === 'true'){
+                const authButtonMain = document.getElementById('authButtonMain');
+                const authButtonSidebar = document.getElementById('authButtonSidebar');
+                authButtonMain.innerHTML = '<a href="ass.html" id="logoutButtonMain">Logout</a>';
+                authButtonSidebar.innerHTML = '<a href="ass.html" id="logoutButtonSidebar">Logout</a>';
+                document.getElementById('logoutButtonMain').addEventListener('click', function() {
+                    logout();
+                });
+                document.getElementById('logoutButtonSidebar').addEventListener('click', function() {
+                    logout();
+                });
+            }
+   
+        </script>
+        
+            <ul class="sidebar">
+                <li onclick="hideSideBar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="24px" fill="#392f2d"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="ass.html">Home</a></li>
+                <li><a href="ass.html#next-section">Destinations</a></li>
+                <li><a href="festival.html">Culture</a></li>
+                <li><a href="cuisine.html">Cuisine</a></li>
+                <li><a href="thingstodo.html">Activities</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li id = "authButtonSidebar"><a href="signin.html">Sign in</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="#"><img src="../Image/malaysiaLogo.jpg" alt="Malaysia Logo" class="logo"></a></li>
+                <li class="hideOnMobile"><a href="ass.html">Home</a></li>
+                <li class="hideOnMobile"><a href="ass.html#next-section">Destinations</a></li>   
+                <li class="hideOnMobile"><a href="festival.html">Culture</a></li>
+                <li class="hideOnMobile"><a href="cuisine.html">Cuisine</a></li>
+                <li class="hideOnMobile"><a href="thingstodo.html">Activities</a></li>
+                <li class="hideOnMobile"><a href="feedback.html">Feedback</a></li>
+                <li class="hideOnMobile"><a href="aboutus.html">About us</a></li>
+                <li class="hideOnMobile" id = "authButtonMain"><a href="signin.html">Sign in</a></li>
+                <li onclick="showSideBar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="24px" fill="#392f2d"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+    </nav>
+</nav>

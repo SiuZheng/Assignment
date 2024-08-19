@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../Style/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" loop autoplay muted preload="auto">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+</head>
+<body>
+    <div id="nav-container"></div>
+   <script>
+       $(document).ready(function(){
+           $("#nav-container").load("navbar.html");
+       });
+   </script>
+
+    <section class="desHome" id="desHhome">
+        <div class="video-container">
+            <video src="https://videos.pexels.com/video-files/20118954/20118954-uhd_2560_1440_30fps.mp4" loop autoplay muted></video>
+        </div>     
+        <h5 class="desName">Perak</h5>
+        <div class="desButton">
+            <a href="#placeIntro" class="btn">Explore Now</a>  
+        </div>
+
+        <h6>Hello  |  Apa Khabar  |  你好</h6>
+        <hr>
+    </section>
+
+    <section class="placeIntro" id="placeIntro">
+        <div class="line"></div>
+        <div class="section">
+            <div class="drow">
+                <div class="col content-col"> 
+                    <h1>About</h1>
+                    <p><b>Perak: Malaysia's Hidden Gem.</b> Uncover the hidden beauty of Perak, a state brimming with natural wonders and cultural heritage. Explore the mesmerizing limestone caves of Gua Tempurung, a subterranean world of stalactites and stalagmites. Immerse yourself in the vibrant city of Ipoh, known for its colonial architecture and delicious hawker food. Discover the tranquility of the Royal Belum State Park, a haven for wildlife and nature lovers. Perak offers a refreshing escape from the ordinary.</p>
+                </div>
+                <div class="col image-col">
+                    <div class="image-gallery">
+                        <img src="https://cdn.pixabay.com/photo/2017/10/25/14/30/kellies-castle-2888100_1280.jpg" alt="">
+                        <img src="https://theipohguide.com/wp-content/uploads/2018/12/shiedaaziz-tasik-cermin.jpg" alt="">
+                        <img src="https://theipohguide.com/wp-content/uploads/2018/12/kek-look-tong-christinasiulan.jpg" alt="">
+                        <img src="https://theipohguide.com/wp-content/uploads/2018/12/ipoh-railway-station-hazriharis.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="line"></div>
+
+    <section class="newSection" id="newSection">
+        <h6> Places to Go </h6>
+        <div class="container">
+            <ul class="popular-list">
+                <li>
+                    <div class="popular-card">
+
+                        <figure class="card-img">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/69/03/f6/great-place-for-family.jpg?w=500&h=-1&s=1" loading="lazy">
+                        </figure>
+                        <div class="card-content">
+                            <div class="card-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                            </div>
+                            <h3 class="card-title">Qing Xing Ling</h3>
+                            <p class="card-text">Leisure and cultural village</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="popular-card">
+
+                        <figure class="card-img">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/f0/b4/d2/the-entrance-from-inside.jpg?w=500&h=-1&s=1" loading="lazy">
+                        </figure>
+                        <div class="card-content">
+                            <div class="card-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                            </div>
+                            <h3 class="card-title">Gua Tempurung</h3>
+                            <p class="card-text"> Caverns and caves</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="popular-card">
+                        <figure class="card-img"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/b7/9d/ca/photo0jpg.jpg?w=500&h=-1&s=1" loading="lazy"></figure>
+                        <div class="card-content">
+                            <div class="card-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                            </div>
+                            <h3 class="card-title">Kellie's Castle</h3>
+                            <p class="card-text"> Tales of romance</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="line"></div>
+
+    <section class="newSection" id="newSection">
+        <div class="drow">
+            <div class="col content-col">
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1485453.5190285908!2d100.17455700784228!3d4.8100207108518935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3034b5fc2f44401d%3A0xa2d9d6f05cfe5ad2!2sPerak!5e0!3m2!1sen!2smy!4v1723738110961!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div> 
+            </div>
+            <div class="col content-col">
+                <h2>Travel Tips</h2>
+                <p>
+                    <ul style="list-style-type:circle;">
+                    <li>Stay safe, be aware of your surroundings</li>
+                    <li>Use reputable transportation</li>
+                    <li>Consider travel insurance</li>
+                    <li>Respect local customs and traditions</li>
+                    <li>Pack light, dress comfortably</li>
+                    <li>Stay hydrated, especially in hot weather</li>
+                    <li>Capture unforgettable memories</li>
+                  </ul>
+                </p>
+            </div>
+        </div>   
+    </section>
+
+  <!-- Back To Top Button -->
+  <div id="backToTop"></div>
+  <script>
+    $(document).ready(function(){
+          $("#backToTop").load("toTopButton.html");
+       });
+  </script>
+
+  <!-- Footer -->
+  <div id="footer-container"></div>
+  <script>
+      $(document).ready(function(){
+          $("#footer-container").load("footer.html");
+      });
+  </script>
+  
+</body>
+</html>

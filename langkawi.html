@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../Style/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" loop autoplay muted preload="auto">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+</head>
+<body>
+    <div id="nav-container"></div>
+   <script>
+       $(document).ready(function(){
+           $("#nav-container").load("navbar.html");
+       });
+   </script>
+
+    <section class="desHome" id="desHhome">
+        <div class="video-container">
+            <video src="https://cdn.pixabay.com/video/2020/03/31/34649-402634325_large.mp4" loop autoplay muted></video>
+        </div>     
+        <h5 class="desName">Langkawi</h5>
+        <div class="desButton">
+            <a href="#placeIntro" class="btn">Explore Now</a>  
+        </div>
+
+        <h6>Hello  |  Apa Khabar  |  你好</h6>
+    </section>
+
+    <section class="placeIntro" id="placeIntro">
+        <div class="line"></div>
+        <div class="section">
+            <div class="drow">
+                <div class="col content-col"> 
+                    <h1>About</h1>
+                    <p><b>Langkawi: A Tropical Paradise.</b> Discover the enchanting allure of Langkawi, Malaysia's jewel in the Andaman Sea. This archipelago boasts pristine beaches, lush rainforests, and a laid-back atmosphere. Indulge in water sports, explore hidden lagoons, or simply unwind in luxury resorts. Langkawi offers a perfect escape for nature lovers and adventure seekers alike.</p>
+                </div>
+                <div class="col image-col">
+                    <div class="image-gallery">
+                        <img src="https://cdn.pixabay.com/photo/2019/05/03/08/05/malaysia-4175331_1280.jpg" alt="">
+                        <img src="https://cdn.pixabay.com/photo/2018/03/15/18/14/tourism-3229062_1280.jpg" alt="">
+                        <img src="https://cdn.pixabay.com/photo/2020/02/27/07/10/beach-4883603_1280.jpg" alt="">
+                        <img src="https://cdn.pixabay.com/photo/2016/05/03/04/08/langkawi-1368445_1280.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="line"></div>
+
+    <section class="newSection" id="newSection">
+        <h6> Places to Go </h6>
+        <div class="container">
+            <ul class="popular-list">
+                <li>
+                    <div class="popular-card">
+
+                        <figure class="card-img">
+                        <img src="https://assets.traveltriangle.com/blog/wp-content/uploads/2016/02/shutterstock_169227857.jpg" loading="lazy">
+                        </figure>
+                        <div class="card-content">
+                            <div class="card-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                            </div>
+                            <h3 class="card-title">Dataran Lang</h3>
+                            <p class="card-text">12M tall sculpture of an eagle</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="popular-card">
+
+                        <figure class="card-img">
+                        <img src="https://assets.traveltriangle.com/blog/wp-content/uploads/2016/02/shutterstock_294010253.jpg" loading="lazy">
+                        </figure>
+                        <div class="card-content">
+                            <div class="card-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                            </div>
+                            <h3 class="card-title">Langkawi Cable Car</h3>
+                            <p class="card-text"> Aerial views of the rainforests, islets</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="popular-card">
+                        <figure class="card-img"><img src="https://img.traveltriangle.com/blog/wp-content/uploads/2023/03/ULU-Melaka-Night-market.jpg" loading="lazy"></figure>
+                        <div class="card-content">
+                            <div class="card-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                            </div>
+                            <h3 class="card-title">Ulu Night Market</h3>
+                            <p class="card-text"> 45-minute round trip cruise</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="line"></div>
+
+    <section class="newSection" id="newSection">
+        <div class="drow">
+            <div class="col content-col">
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253772.56994333045!2d99.61285757287325!3d6.3686235673451925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304c790ff3458df3%3A0x2a7fa21075f37111!2sLangkawi%20Island!5e0!3m2!1sen!2smy!4v1723738278974!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div> 
+            </div>
+            <div class="col content-col">
+                <h2>Travel Tips</h2>
+                <p>
+                    <ul style="list-style-type:circle;">
+                    <li>Stay safe, be aware of your surroundings</li>
+                    <li>Use reputable transportation</li>
+                    <li>Consider travel insurance</li>
+                    <li>Respect local customs and traditions</li>
+                    <li>Pack light, dress comfortably</li>
+                    <li>Stay hydrated, especially in hot weather</li>
+                    <li>Capture unforgettable memories</li>
+                  </ul>
+                </p>
+            </div>
+        </div>   
+    </section>
+
+  <!-- Back To Top Button -->
+  <div id="backToTop"></div>
+  <script>
+    $(document).ready(function(){
+          $("#backToTop").load("toTopButton.html");
+       });
+  </script>
+
+   <!-- Footer -->
+   <div id="footer-container"></div>
+   <script>
+       $(document).ready(function(){
+           $("#footer-container").load("footer.html");
+       });
+   </script>
+  
+</body>
+</html>
